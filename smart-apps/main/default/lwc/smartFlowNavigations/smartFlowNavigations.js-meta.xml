@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle
+	xmlns="http://soap.sforce.com/2006/04/metadata">
+	<apiVersion>62.0</apiVersion>
+	<isExposed>true</isExposed>
+	<masterLabel>Smart Flow Navigations</masterLabel>
+	<description>Smart Flow Navigations 1.0 - Add as many custom-styled buttons as you want! Place anywhere on your Flow screen. Developed By: Anirban Roy</description>
+	<targets>
+		<target>lightning__FlowScreen</target>
+	</targets>
+	<targetConfigs>
+		<targetConfig targets="lightning__FlowScreen">
+			<!-- Inputs -->
+			<property name="buttonsList" role="inputOnly" required="true" label="Buttons List (String, JSON Array) :" type="String"
+                description="[{&quot;label&quot;:&quot;Previous&quot;,&quot;isNextAction&quot;:false,&quot;variant&quot;:&quot;neutral&quot;,&quot;outputValue&quot;:&quot;Previous&quot;,&quot;icon&quot;:&quot;utility:chevronleft&quot;,&quot;iconAlignment&quot;:&quot;left&quot;,&quot;hideWhenUnavailable&quot;:true},{&quot;label&quot;:&quot;Next&quot;,&quot;isNextAction&quot;:true,&quot;variant&quot;:&quot;#1565C0&quot;,&quot;outputValue&quot;:&quot;Next&quot;,&quot;icon&quot;:&quot;utility:chevronright&quot;,&quot;iconColor&quot;:&quot;#fff&quot;,&quot;labelColor&quot;:&quot;#fff&quot;,&quot;iconAlignment&quot;:&quot;right&quot;,&quot;hideWhenUnavailable&quot;:false}]"
+                default="Specify a JSON array string defining button configurations for Previous, Next, or Finish actions. Configure attributes like labels, styles, icons, icon alignment, visibility, and actions. Use this property to fully customize buttons within the Flow screen." />
+				
+			<property name="layoutAlignment" role="inputOnly" required="true" label="Button Layout Alignment :"
+                type="String"
+                description="Specify the alignment of the button layout within Flow UI. Valid values are 'left', 'center', or 'right' to position the button accordingly. Defaults to 'right'."
+				default="right" />
+
+			<property name="includeLine" role="inputOnly" required="false" label="Include a Horizontal Line?" type="Boolean"
+                description="Boolean value to include a horizontal line above the buttons for better separation between the buttons and the elements above them. Defaults to false."
+                default="false" />
+
+			<!-- Outputs -->
+			<property name="outputValue" role="outputOnly" label="Output Value :" type="String"
+                description="Returns the value of the button that was clicked. Use this in a Decision block or for flow routing." />
+		</targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

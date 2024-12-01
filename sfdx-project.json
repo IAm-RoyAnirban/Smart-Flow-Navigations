@@ -1,0 +1,20 @@
+{
+  "packageDirectories": [
+    {
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "path": "smart-apps",
+      "default": true,
+      "package": "Smart Flow Navigations",
+      "versionDescription": "Add as many custom-styled buttons as you want! Place anywhere on your Flow screen. Developed By: Anirban Roy"
+    }
+  ],
+  "name": "Smart Flow Navigations",
+  "namespace": "smart-apps",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "61.0",
+  "packageAliases": {
+    "Smart Flow Navigations": "0HoJ4000000KylWKAS",
+    "Smart Flow Navigations@0.1.0-1": "04tJ4000000HDRFIA4"
+  }
+}
