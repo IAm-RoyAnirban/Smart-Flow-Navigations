@@ -1,0 +1,46 @@
+<!--
+  @author            : Anirban Roy
+  @created on        : 05-19-2023
+  @last modified on  : 23-11-2024
+  @description       : Smart Flow Navigation Buttons
+-->
+<template>
+  <div lwc:if={errorMsg} class="container_error">
+    <span class="el_error_label">Error:</span> {errorMsg}
+  </div>
+  <template lwc:elseif={finalButtons}>
+    <hr lwc:if={includeLine} class="container_divider">
+
+    <div class={layoutAlignment}>
+      <template for:each={finalButtons} for:item="button">
+
+        <template lwc:if={button.style}>
+          <lightning-button lwc:if={button.icon} key={button.label} variant="brand" style={button.style}
+            icon-name={button.icon} icon-position={button.iconAlignment} label={button.label} value={button.outputValue}
+            title={button.label} data-is-next-action={button.isNextAction} disabled={button.isDisabled}
+            onclick={handleButtonClick} disable-animation>
+          </lightning-button>
+
+          <lightning-button lwc:else key={button.label} variant="brand" style={button.style} label={button.label}
+            value={button.outputValue} title={button.label} data-is-next-action={button.isNextAction}
+            disabled={button.isDisabled} onclick={handleButtonClick} disable-animation>
+
+          </lightning-button>
+        </template>
+
+        <template lwc:else>
+          <lightning-button lwc:if={button.icon} key={button.label} variant={button.variant} icon-name={button.icon}
+            icon-position={button.iconAlignment} label={button.label} value={button.outputValue} title={button.label}
+            data-is-next-action={button.isNextAction} disabled={button.isDisabled} onclick={handleButtonClick}
+            disable-animation>
+          </lightning-button>
+
+          <lightning-button lwc:else key={button.label} variant={button.variant} label={button.label}
+            value={button.outputValue} title={button.label} data-is-next-action={button.isNextAction}
+            disabled={button.isDisabled} onclick={handleButtonClick} disable-animation></lightning-button>
+        </template>
+
+      </template>
+    </div>
+  </template>
+</template>

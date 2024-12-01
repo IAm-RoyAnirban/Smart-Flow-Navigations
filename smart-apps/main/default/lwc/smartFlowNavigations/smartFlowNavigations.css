@@ -1,0 +1,44 @@
+.container_error {
+    color: #D50000;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.el_error_label {
+    font-weight: 600;
+}
+
+.container_divider {
+    height: 0.1px;
+    background: #263238;
+    margin-top: 1rem;
+    margin-bottom: -0rem;
+}
+
+.flex_start {
+    margin: 1rem 0rem;
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.flex_center {
+    margin: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.flex_end {
+    margin: 1rem 0rem;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+lightning-button+lightning-button {
+    margin-left: 0rem;
+}
