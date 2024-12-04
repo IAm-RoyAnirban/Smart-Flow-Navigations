@@ -2,7 +2,7 @@
   "packageDirectories": [
     {
       "versionName": "ver 0.1",
-      "versionNumber": "0.1.0.NEXT",
+      "versionNumber": "0.2.0.NEXT",
       "path": "smart-apps",
       "default": true,
       "package": "Smart Flow Navigations",
@@ -15,6 +15,8 @@
   "sourceApiVersion": "61.0",
   "packageAliases": {
     "Smart Flow Navigations": "0HoJ4000000KylWKAS",
-    "Smart Flow Navigations@0.1.0-1": "04tJ4000000HDRFIA4"
+    "Smart Flow Navigations@0.1.0-1": "04tJ4000000HDRFIA4",
+    "Smart Flow Navigations@0.1.0-2": "04tJ4000000HDSXIA4",
+    "Smart Flow Navigations@0.2.0-1": "04tJ4000000HDScIAO"
   }
 }

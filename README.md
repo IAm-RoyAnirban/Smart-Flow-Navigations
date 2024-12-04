@@ -30,8 +30,8 @@ To install **Smart Flow Navigations**, follow these steps:
 
 
 1. You can install the **Smart Flow Navigations** component directly into your Salesforce environment using the following links:
-   - **Production Environment**: [Install the package in Production](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tJ4000000HDRFIA4)
-   - **Sandbox Environment**: [Install the package in Sandbox / Scratch Org](https://test.salesforce.com/packaging/installPackage.apexp?p0=04tJ4000000HDRFIA4)
+   - **Production Environment**: [Install the package in Production](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tJ4000000HDScIAO)
+   - **Sandbox Environment**: [Install the package in Sandbox / Scratch Org](https://test.salesforce.com/packaging/installPackage.apexp?p0=04tJ4000000HDScIAO)
 
 2. Add the component to a Flow screen:
    - In your Salesforce Flow, Search for the component ``Smart Flow Navigations`` and add it to a screen where you want the buttons to appear.
